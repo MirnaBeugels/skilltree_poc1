@@ -1,95 +1,240 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./styles.module.css";
+import Image from 'next/image';
+import Ster from "./ster";
+
+export const metadata = {
+  title: "SkillTree",
+  description: "Helpt je bij je studie",
+};
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <div className={styles.cardContainer}>
+          <div className={styles.card}>
+                <div className={styles.architectuur}>Software</div>
+                <div className={styles.flipIcon}>
+                <Image className={styles.flipIconIcon}
+                      src="/flip.svg"
+                      width={45.45}
+                      height={45}
+                      alt="Click here to flip the card"
+                      />
+                </div>
+                <div className={styles.leeruitkomst}>Analyse</div>
+                <div className={styles.beoordeling}>
+                  <Ster className={styles.yellow}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.white}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.white}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.white}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                </div>
+                <div className={styles.groei}>
+                  <Image className={styles.plantje}
+                        src="/sprout.svg"
+                        width={50}
+                        height={88}
+                        alt="Click here to flip the card"
+                        />
+                </div>
+          </div>
+          <div className={styles.card}>
+                <div className={styles.architectuur}>Software</div>
+                <div className={styles.flipIcon}>
+                  <Image className={styles.flipIconIcon}
+                      src="/flip.svg"
+                      width={45.45}
+                      height={45}
+                      alt="Click here to flip the card"
+                      />
+                  </div>
+                  <div className={styles.leeruitkomst}>Advice</div>
+                  <div className={styles.beoordeling}>
+                    <Ster className={styles.yellow}
+                        src="/ster.svg"
+                        width={22}
+                        height={22}
+                        alt="Orienting"
+                        />
+                    <Ster className={styles.yellow}
+                        src="/ster.svg"
+                        width={22}
+                        height={22}
+                        alt="Orienting"
+                        />
+                    <Ster className={styles.white}
+                        src="/ster.svg"
+                        width={22}
+                        height={22}
+                        alt="Orienting"
+                        />
+                    <Ster className={styles.white}
+                        src="/ster.svg"
+                        width={22}
+                        height={22}
+                        alt="Orienting"
+                        />
+                  </div>
+                <div className={styles.groei}>
+                  <Image className={styles.plantje}
+                        src="/plant.svg"
+                        width={72}
+                        height={172}
+                        alt="Click here to flip the card"
+                        />
+                </div>
+          </div>
+          <div className={styles.card}>
+                <div className={styles.architectuur}>Software</div>
+                <div className={styles.flipIcon}>
+                  <Image className={styles.flipIconIcon}
+                      src="/flip.svg"
+                      width={45.45}
+                      height={45}
+                      alt="Click here to flip the card"
+                      />
+                </div>
+                <div className={styles.leeruitkomst}>Design</div>
+                <div className={styles.beoordeling}>
+                  <Ster className={styles.yellow}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.yellow}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.yellow}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.white}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                </div>
+                <div className={styles.groei}>
+                  <Image className={styles.plantje}
+                        src="/bud.svg"
+                        width={78}
+                        height={201}
+                        alt="Click here to flip the card"
+                        />
+                </div>
+          </div>
+          <div className={styles.card}>
+                <div className={styles.architectuur}>Software</div>
+                <div className={styles.flipIcon}>
+                <Image className={styles.flipIconIcon}
+                    src="/flip.svg"
+                    width={45.45}
+                    height={45}
+                    alt="Click here to flip the card"
+                    />
+                </div>
+                <div className={styles.leeruitkomst}>Realization</div>
+                <div className={styles.beoordeling}>
+                  <Ster className={styles.yellow}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.yellow}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.yellow}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.yellow}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                </div>
+                <div className={styles.groei}>
+                  <Image className={styles.plantje}
+                        src="/flower.svg"
+                        width={80}
+                        height={234}
+                        alt="Click here to flip the card"
+                        />
+                </div>
+          </div>
+          <div className={styles.card}>
+                <div className={styles.architectuur}>Software</div>
+                <div className={styles.flipIcon}>
+                <Image className={styles.ster}
+                    src="/flip.svg"
+                    width={45.45}
+                    height={45}
+                    alt="Click here to flip the card"
+                    />
+                </div>
+                <div className={styles.leeruitkomst}>Manage &amp; Control </div>
+                <div className={styles.beoordeling}>
+                  <Ster className={styles.white}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.white}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.white}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                  <Ster className={styles.white}
+                      src="/ster.svg"
+                      width={22}
+                      height={22}
+                      alt="Orienting"
+                      />
+                </div>
+                <div className={styles.groei}>
+                  
+                </div>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }

@@ -1,0 +1,83 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  margin: auto;
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background-image: url("/front.svg");
+  width: 297px;
+  min-width: 297px;
+  height: 398px;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-areas:
+  "a a a f"
+  "l l l f"
+  "b b b f"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  "g g g g"
+  ". . . ."
+}
+
+.architectuur {
+  justify-self: start;
+  grid-area: a;
+  font-size: 20pt;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.leeruitkomst {
+  justify-self: start;
+  grid-area: l;
+  font-size: 12pt;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.beoordeling {
+  justify-self: start;
+  grid-area: b;
+}
+
+.flipIcon {
+  justify-self: end;
+  grid-area: f;
+}
+
+.groei {
+  grid-area: g;
+  align-self: end;
+  justify-self: center;
+}
+
+.yellow path{
+  fill: #FABA03;
+}
+
+.white path{
+  fill: #ffffff;
+}
